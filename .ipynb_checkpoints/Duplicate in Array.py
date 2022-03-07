@@ -1,0 +1,2 @@
+from sys import stdin 
+def findDuplicate(arr, n) : sumOfNminusTwoNaturalNumbers = 0 for i in range(n - 1) : sumOfNminusTwoNaturalNumbers += i sumOfElements = 0 for i in range(n) : sumOfElements += arr[i] return (sumOfElements - sumOfNminusTwoNaturalNumbers) def takeInput() : n = int(stdin.readline().rstrip()) if n == 0 : return list(), 0 arr = list(map(int, stdin.readline().rstrip().split(" "))) return arr, n #main t = int(stdin.readline().rstrip()) while t > 0 : arr, n = takeInput() print(findDuplicate(arr, n)) t -= 1
