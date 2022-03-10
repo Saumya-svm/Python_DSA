@@ -53,7 +53,6 @@ class PriorityQueue():
     def removeMin(self):
         if self.isEmpty():
             return None
-        minimum = self.pq[0].data
         self.pq[0] = self.pop()
         self.__percolateDown(self)
         return minimum
