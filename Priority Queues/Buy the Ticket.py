@@ -61,10 +61,6 @@ def buyTicket(l,k):
             heapq._heapify_max(arr)
 
 
-            
-        
-
-
 l = list(map(int,input().split()))
 k = int(input())
 time = buyTicket(l,k)
